@@ -1,0 +1,41 @@
+<html lang='pt-br'>
+    <head>
+        <meta charset='utf-8'>
+        <link rel="stylesheet" type="text/css" href="/static/css/basic.css" media="screen" />  
+        <link rel="stylesheet" type="text/css" href="/static/css/top-menu.css" media="screen" />  
+        <title>Flask</title>
+    </head>
+
+    <body>
+        <header>
+            <div class='top-menu'>
+                <ul class='top-menu'>
+                    <li> <a href="{{ url_for('hello',name='Pingu #') }}">Click Here Stranger!</a> </li>
+                    <li> <a href="{{ url_for('sena',type='Mega Sena') }}">Mega Sena</a> </li>
+                    <li> <a href="{{ url_for('sena',type='Loto Facil') }}">Loto Facil</a> </li>
+                    <li> <a href="{{ url_for('time') }}">MothaFucking Time</a> </li>
+                    <li> <a href="#">Login</a> </li>
+                    <li> <a href="{{ url_for('about') }}">About</a> </li>
+                </ul>
+            </div>
+        </header>
+
+        </br></br>
+
+        <h3>{{ quote }}</h3>
+
+        </br></br>
+
+
+        <h1>Welcome to my Flask WebSite !!</h1>
+        </br></br>
+        </br></br>
+
+        {%block content%}
+
+        {%endblock%}
+
+    </body>
+
+
+</html>

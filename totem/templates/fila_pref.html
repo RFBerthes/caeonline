@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    
+  <head>
+    <meta charset="utf-8">
+  </head>
+
+  <body>
+        
+      {% extends "index.html" %}
+
+        {% block content %}
+        
+        <p id="left">
+            <a href="{{ url_for('numero_totem') }}"> 
+	    	<img class='filaBtn' src="../static/img/print.png" width="250" height="250">
+            </a>
+        </p> 
+
+        <p id="right"> 
+            <img src="../static/img/qrcode.png" width="200" height="200"> 
+        </p>
+
+        {% endblock %}
+    </body>
+</html>
